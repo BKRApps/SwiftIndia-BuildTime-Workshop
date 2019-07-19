@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public class HelloWorld {
+    public static func printHelloWorld() {
+        print("Hello World")
+    }
+}

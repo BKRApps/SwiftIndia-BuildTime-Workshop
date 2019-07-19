@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F07808E322E20FBE00999FC4 /* ImplicitDependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = F07808E122E20FBE00999FC4 /* ImplicitDependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F07808F022E20FDF00999FC4 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07808EF22E20FDF00999FC4 /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F07808DE22E20FBE00999FC4 /* ImplicitDependencies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImplicitDependencies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07808E122E20FBE00999FC4 /* ImplicitDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImplicitDependencies.h; sourceTree = "<group>"; };
 		F07808E222E20FBE00999FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07808EF22E20FDF00999FC4 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				F07808E122E20FBE00999FC4 /* ImplicitDependencies.h */,
 				F07808E222E20FBE00999FC4 /* Info.plist */,
+				F07808EF22E20FDF00999FC4 /* HelloWorld.swift */,
 			);
 			path = ImplicitDependencies;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					F07808DD22E20FBE00999FC4 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07808F022E20FDF00999FC4 /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		F07808E722E20FBE00999FC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bkrapps.swift.india.ImplicitDependencies;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		F07808E822E20FBE00999FC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

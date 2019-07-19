@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public class HelloWorldExplicit {
+    public func printHelloWorld() {
+        print("Hello World from explicit dependency")
+    }
+}

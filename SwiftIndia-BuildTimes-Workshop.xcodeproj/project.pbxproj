@@ -16,7 +16,43 @@
 		F035CBAB22DB09D800CBBF42 /* DoubleExtensionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBAA22DB09D800CBBF42 /* DoubleExtensionSample.swift */; };
 		F035CBAD22DB0BF900CBBF42 /* ArrayExtentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBAC22DB0BF900CBBF42 /* ArrayExtentsion.swift */; };
 		F035CBAF22DB0F3B00CBBF42 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBAE22DB0F3B00CBBF42 /* DictionaryExtension.swift */; };
+		F07808FA22E2103200999FC4 /* ExplicitDependencyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F07808F822E2103200999FC4 /* ExplicitDependencyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F07808FD22E2103200999FC4 /* ExplicitDependencyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07808F622E2103200999FC4 /* ExplicitDependencyFramework.framework */; };
+		F07808FE22E2103200999FC4 /* ExplicitDependencyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F07808F622E2103200999FC4 /* ExplicitDependencyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F078090422E2104500999FC4 /* HelloWorldExplicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F078090322E2104500999FC4 /* HelloWorldExplicit.swift */; };
+		F078090522E2109800999FC4 /* ImplicitDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07808EE22E20FCB00999FC4 /* ImplicitDependencies.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F07808ED22E20FCB00999FC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F07808E922E20FCB00999FC4 /* ImplicitDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F07808DE22E20FBE00999FC4;
+			remoteInfo = ImplicitDependencies;
+		};
+		F07808FB22E2103200999FC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F035CB8A22DB04FE00CBBF42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F07808F522E2103200999FC4;
+			remoteInfo = ExplicitDependencyFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F078090222E2103200999FC4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F07808FE22E2103200999FC4 /* ExplicitDependencyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F035CB9222DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftIndia-BuildTimes-Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +66,11 @@
 		F035CBAA22DB09D800CBBF42 /* DoubleExtensionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionSample.swift; sourceTree = "<group>"; };
 		F035CBAC22DB0BF900CBBF42 /* ArrayExtentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtentsion.swift; sourceTree = "<group>"; };
 		F035CBAE22DB0F3B00CBBF42 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		F07808E922E20FCB00999FC4 /* ImplicitDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImplicitDependencies.xcodeproj; path = ImplicitDependencies/ImplicitDependencies.xcodeproj; sourceTree = "<group>"; };
+		F07808F622E2103200999FC4 /* ExplicitDependencyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExplicitDependencyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07808F822E2103200999FC4 /* ExplicitDependencyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExplicitDependencyFramework.h; sourceTree = "<group>"; };
+		F07808F922E2103200999FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F078090322E2104500999FC4 /* HelloWorldExplicit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldExplicit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +78,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07808FD22E2103200999FC4 /* ExplicitDependencyFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07808F322E2103200999FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F078090522E2109800999FC4 /* ImplicitDependencies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +96,9 @@
 		F035CB8922DB04FE00CBBF42 = {
 			isa = PBXGroup;
 			children = (
+				F07808E922E20FCB00999FC4 /* ImplicitDependencies.xcodeproj */,
 				F035CB9422DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop */,
+				F07808F722E2103200999FC4 /* ExplicitDependencyFramework */,
 				F035CB9322DB04FE00CBBF42 /* Products */,
 				F035CBC322DB365600CBBF42 /* Frameworks */,
 			);
@@ -56,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F035CB9222DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop.app */,
+				F07808F622E2103200999FC4 /* ExplicitDependencyFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +145,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F07808EA22E20FCB00999FC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F07808EE22E20FCB00999FC4 /* ImplicitDependencies.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F07808F722E2103200999FC4 /* ExplicitDependencyFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F07808F822E2103200999FC4 /* ExplicitDependencyFramework.h */,
+				F07808F922E2103200999FC4 /* Info.plist */,
+				F078090322E2104500999FC4 /* HelloWorldExplicit.swift */,
+			);
+			path = ExplicitDependencyFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F07808F122E2103200999FC4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07808FA22E2103200999FC4 /* ExplicitDependencyFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F035CB9122DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop */ = {
@@ -103,15 +185,35 @@
 				F035CB8F22DB04FE00CBBF42 /* Frameworks */,
 				F035CB9022DB04FE00CBBF42 /* Resources */,
 				F0A85C9C22DB3D7900BF06AD /* ShellScript */,
+				F078090222E2103200999FC4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F07808FC22E2103200999FC4 /* PBXTargetDependency */,
 			);
 			name = "SwiftIndia-BuildTimes-Workshop";
 			productName = "SwiftIndia-BuildTimes-Workshop";
 			productReference = F035CB9222DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F07808F522E2103200999FC4 /* ExplicitDependencyFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07808FF22E2103200999FC4 /* Build configuration list for PBXNativeTarget "ExplicitDependencyFramework" */;
+			buildPhases = (
+				F07808F122E2103200999FC4 /* Headers */,
+				F07808F222E2103200999FC4 /* Sources */,
+				F07808F322E2103200999FC4 /* Frameworks */,
+				F07808F422E2103200999FC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExplicitDependencyFramework;
+			productName = ExplicitDependencyFramework;
+			productReference = F07808F622E2103200999FC4 /* ExplicitDependencyFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -126,6 +228,10 @@
 					F035CB9122DB04FE00CBBF42 = {
 						CreatedOnToolsVersion = 10.2;
 					};
+					F07808F522E2103200999FC4 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
 				};
 			};
 			buildConfigurationList = F035CB8D22DB04FE00CBBF42 /* Build configuration list for PBXProject "SwiftIndia-BuildTimes-Workshop" */;
@@ -139,12 +245,29 @@
 			mainGroup = F035CB8922DB04FE00CBBF42;
 			productRefGroup = F035CB9322DB04FE00CBBF42 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F07808EA22E20FCB00999FC4 /* Products */;
+					ProjectRef = F07808E922E20FCB00999FC4 /* ImplicitDependencies.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F035CB9122DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop */,
+				F07808F522E2103200999FC4 /* ExplicitDependencyFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F07808EE22E20FCB00999FC4 /* ImplicitDependencies.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ImplicitDependencies.framework;
+			remoteRef = F07808ED22E20FCB00999FC4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F035CB9022DB04FE00CBBF42 /* Resources */ = {
@@ -154,6 +277,13 @@
 				F035CBA022DB04FF00CBBF42 /* LaunchScreen.storyboard in Resources */,
 				F035CB9D22DB04FF00CBBF42 /* Assets.xcassets in Resources */,
 				F035CB9B22DB04FE00CBBF42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F07808F422E2103200999FC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +323,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F07808F222E2103200999FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F078090422E2104500999FC4 /* HelloWorldExplicit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F07808FC22E2103200999FC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F07808F522E2103200999FC4 /* ExplicitDependencyFramework */;
+			targetProxy = F07808FB22E2103200999FC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F035CB9922DB04FE00CBBF42 /* Main.storyboard */ = {
@@ -334,6 +480,7 @@
 		F035CBA522DB04FF00CBBF42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8STGDD3H7;
@@ -354,6 +501,7 @@
 		F035CBA622DB04FF00CBBF42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8STGDD3H7;
@@ -368,6 +516,65 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F078090022E2103200999FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C8STGDD3H7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ExplicitDependencyFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkrapps.swift.india.ExplicitDependencyFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F078090122E2103200999FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C8STGDD3H7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ExplicitDependencyFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkrapps.swift.india.ExplicitDependencyFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -388,6 +595,15 @@
 			buildConfigurations = (
 				F035CBA522DB04FF00CBBF42 /* Debug */,
 				F035CBA622DB04FF00CBBF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07808FF22E2103200999FC4 /* Build configuration list for PBXNativeTarget "ExplicitDependencyFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F078090022E2103200999FC4 /* Debug */,
+				F078090122E2103200999FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

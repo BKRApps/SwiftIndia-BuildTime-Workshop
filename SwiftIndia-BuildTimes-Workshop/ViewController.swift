@@ -7,14 +7,14 @@
 //
 
 import UIKit
-//import SharedDynamicFramework
+import ExplicitDependencyFramework
+import ImplicitDependencies
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("yes")
-        // Do any additional setup after loading the view.
+        HelloWorld.printHelloWorld()
 //        SimpleHello().sayHello()
     }
 }
