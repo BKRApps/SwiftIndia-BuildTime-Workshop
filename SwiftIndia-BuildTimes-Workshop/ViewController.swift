@@ -7,14 +7,15 @@
 //
 
 import UIKit
+//import SharedDynamicFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("yes")
         // Do any additional setup after loading the view.
+//        SimpleHello().sayHello()
     }
-
-
 }
 

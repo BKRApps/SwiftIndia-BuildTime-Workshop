@@ -12,6 +12,10 @@
 		F035CB9B22DB04FE00CBBF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F035CB9922DB04FE00CBBF42 /* Main.storyboard */; };
 		F035CB9D22DB04FF00CBBF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F035CB9C22DB04FF00CBBF42 /* Assets.xcassets */; };
 		F035CBA022DB04FF00CBBF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F035CB9E22DB04FF00CBBF42 /* LaunchScreen.storyboard */; };
+		F035CBA822DB071600CBBF42 /* AllExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBA722DB071600CBBF42 /* AllExtensions.swift */; };
+		F035CBAB22DB09D800CBBF42 /* DoubleExtensionSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBAA22DB09D800CBBF42 /* DoubleExtensionSample.swift */; };
+		F035CBAD22DB0BF900CBBF42 /* ArrayExtentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBAC22DB0BF900CBBF42 /* ArrayExtentsion.swift */; };
+		F035CBAF22DB0F3B00CBBF42 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F035CBAE22DB0F3B00CBBF42 /* DictionaryExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F035CB9C22DB04FF00CBBF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F035CB9F22DB04FF00CBBF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F035CBA122DB04FF00CBBF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F035CBA722DB071600CBBF42 /* AllExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExtensions.swift; sourceTree = "<group>"; };
+		F035CBAA22DB09D800CBBF42 /* DoubleExtensionSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensionSample.swift; sourceTree = "<group>"; };
+		F035CBAC22DB0BF900CBBF42 /* ArrayExtentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtentsion.swift; sourceTree = "<group>"; };
+		F035CBAE22DB0F3B00CBBF42 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 			children = (
 				F035CB9422DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop */,
 				F035CB9322DB04FE00CBBF42 /* Products */,
+				F035CBC322DB365600CBBF42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		F035CB9422DB04FE00CBBF42 /* SwiftIndia-BuildTimes-Workshop */ = {
 			isa = PBXGroup;
 			children = (
+				F035CBA922DB09A400CBBF42 /* FIleBaseCompilations */,
 				F035CB9522DB04FE00CBBF42 /* AppDelegate.swift */,
 				F035CB9722DB04FE00CBBF42 /* ViewController.swift */,
 				F035CB9922DB04FE00CBBF42 /* Main.storyboard */,
@@ -62,6 +72,24 @@
 				F035CBA122DB04FF00CBBF42 /* Info.plist */,
 			);
 			path = "SwiftIndia-BuildTimes-Workshop";
+			sourceTree = "<group>";
+		};
+		F035CBA922DB09A400CBBF42 /* FIleBaseCompilations */ = {
+			isa = PBXGroup;
+			children = (
+				F035CBA722DB071600CBBF42 /* AllExtensions.swift */,
+				F035CBAA22DB09D800CBBF42 /* DoubleExtensionSample.swift */,
+				F035CBAC22DB0BF900CBBF42 /* ArrayExtentsion.swift */,
+				F035CBAE22DB0F3B00CBBF42 /* DictionaryExtension.swift */,
+			);
+			path = FIleBaseCompilations;
+			sourceTree = "<group>";
+		};
+		F035CBC322DB365600CBBF42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +102,7 @@
 				F035CB8E22DB04FE00CBBF42 /* Sources */,
 				F035CB8F22DB04FE00CBBF42 /* Frameworks */,
 				F035CB9022DB04FE00CBBF42 /* Resources */,
+				F0A85C9C22DB3D7900BF06AD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F0A85C9C22DB3D7900BF06AD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F035CB8E22DB04FE00CBBF42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F035CBAD22DB0BF900CBBF42 /* ArrayExtentsion.swift in Sources */,
+				F035CBAB22DB09D800CBBF42 /* DoubleExtensionSample.swift in Sources */,
+				F035CBA822DB071600CBBF42 /* AllExtensions.swift in Sources */,
+				F035CBAF22DB0F3B00CBBF42 /* DictionaryExtension.swift in Sources */,
 				F035CB9822DB04FE00CBBF42 /* ViewController.swift in Sources */,
 				F035CB9622DB04FE00CBBF42 /* AppDelegate.swift in Sources */,
 			);
@@ -289,8 +342,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bkrapps.swift.india.SwiftIndia-BuildTimes-Workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,8 +362,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bkrapps.swift.india.SwiftIndia-BuildTimes-Workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
